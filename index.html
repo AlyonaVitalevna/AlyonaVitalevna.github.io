@@ -13,7 +13,23 @@
 
      <link rel="stylesheet" href="css\style.css">
 
-     <script src="jquery\jquery-3.1.1.min.js"></script> 
+     <script src="jquery\jquery-3.1.1.min.js"></script>
+     
+     <script type="text/javascript">
+        $(document).ready(function(){ 
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.up').fadeIn();
+        } else {
+        $('.up').fadeOut();
+        }
+        });
+        $('.up').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 800);
+        return false;
+        });
+        });
+    </script>
 
      <script type="js\bootstrap.min.js"></script>
 
@@ -321,11 +337,11 @@
                     
                     <div class="row">
                             <div class="col-xs-2 col-sm-3 col-md-4 col-lg-2">
-                    <a id="up" href="#"></a>
-                    </div>
-                    <div class="col-xs-4 col-sm-5 col-md-4 col-lg-10">
-                    <a id="more_news" href="#">Показать еще новости</a>
-                    </div>
+                                <a class="up" href="#"></a>
+                            </div>
+                            <div class="col-xs-4 col-sm-5 col-md-4 col-lg-10">
+                                <a id="more_news" href="#">Показать еще новости</a>
+                            </div>
                     </div>
                 <!--sidebar!--> 
                 </div>
