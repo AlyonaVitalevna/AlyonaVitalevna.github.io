@@ -80,7 +80,7 @@
     padding: 10px 0 6px;
 }
 
-#up {
+.up {
     background: rgba(0, 0, 0, 0) url(images/up_button.png);
     height: 30px;
     width: 34px;
@@ -211,13 +211,6 @@ span {
 
  
 
-
-
-
-/*.col-sm-5 {
-    margin: 0;
-    padding: 0;
-}*/
 
 
 
